@@ -64,14 +64,3 @@ SongContext.prototype.stop = function() {
 
 
 var songContext = new SongContext();
-
-const context = new AudioContext();
-fetch('https://s76myt.storage.yandex.net/get-mp3/ed1f099932a60d7efdc49e06c536169e/0005ce2f057c63d4/rmusic/U2FsdGVkX18NPn1jnzCP2YLwbaW0US70qDBcWOPE6paO5Nipz8zUjKgNuzkP7Vlk4zXlT6B8a9fLnv80tD6WMGBhPLPZbuLS0YSVJRssLD8/24fca097b302859f485bed30eb01dd2fb40002e0f1b81180ac82f7c9f9c856c1/29291?track-id=82304736&play=false')
-.then(response => response.arrayBuffer())
-    .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
-    .then(audioBuffer => {
-      const source = context.createBufferSource();
-      source.buffer = audioBuffer;
-      source.connect(context.destination);
-      source.start();
-    });
