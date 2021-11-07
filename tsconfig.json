@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "incremental": false,
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "es2015",
+      "dom",
+      "es2015.promise",
+      "es2019"
+    ],
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
