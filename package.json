@@ -1,0 +1,21 @@
+{
+  "name": "audio-visualizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alexx1992/audio-visualizer",
+  "author": "Alexey Formanyuk <Alexey.Formanyuk@kaspersky.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "dependencies": {
+    "d3": "^7.1.1",
+    "express": "^4.17.1",
+    "jsmediatags": "^3.9.7",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
